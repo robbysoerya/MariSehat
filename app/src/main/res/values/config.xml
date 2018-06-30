@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Url for buildup-hosted data -->
+    <string name="dynamic_url">https://studio.buildup.io/api/app/data/</string>
+
+    <!-- authentication for app services -->
+    <string name="api_key">yNQx1vRsXzXYcylbOcOBQ5vfuJ7X3GloebpsD7HxlD</string>
+    <string name="app_id">dd076c2a-2ca4-4d44-9cf8-c04b0f458ede</string>
+
+</resources>
+

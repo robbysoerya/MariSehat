@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string name="app_name">Mari Sehat</string>
+
+    <!-- Activity Titles -->
+    <string formatted="false" name="mariSehatActivity">Mari Sehat</string>
+    <string formatted="false" name="mariSehatMainActivity">Mari Sehat</string>
+	
+	<!-- Navigation Titles -->
+    <string name="mainmenu_entry0">Mari Sehat</string>
+    <string name="mainmenu_entry1">Kalori</string>
+    <string name="mainmenu_entry2">Minum</string>
+    <string name="mainmenu_entry3">Ideal</string>
+    <string name="mainmenu_entry4">Informasi</string>
+</resources>
+

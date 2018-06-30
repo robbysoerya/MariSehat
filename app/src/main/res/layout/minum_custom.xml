@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@+id/contentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/scrollView"
+            android:padding="@dimen/activity_margin"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/card_margin_horizontal"
+                android:paddingTop="@dimen/card_margin_top"
+                android:paddingRight="@dimen/card_margin_horizontal"
+                android:paddingBottom="@dimen/card_margin_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/png_icons8drinking50937"
+                    android:layout_width="100.0sp"
+                    android:layout_height="100.0sp"
+                    android:layout_marginTop="30.0dip"
+                    android:layout_centerHorizontal="true" />
+                <EditText
+                    android:id="@+id/berat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="160.0dip"
+                    android:hint="Masukan Berat Anda"
+                    android:numeric="decimal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:textSize="40dp"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/hasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:layout_below="@+id/hitungminum"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/hitungminum"
+                    android:background="@color/primaryDark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Hitung"
+                    android:layout_below="@+id/berat" />
+                <TextView
+                    android:textSize="20.0sp"
+                    android:textColor="@color/primaryDark"
+                    android:id="@+id/pengingat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Pilih waktu untuk diingatkan minum"
+                    android:layout_below="@+id/hasil"
+                    android:layout_centerHorizontal="true" />
+                <RadioButton
+                    android:textColor="@color/primaryDark"
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:text="1 Jam"
+                    android:layout_below="@+id/pengingat" />
+                <RadioButton
+                    android:textColor="@color/primaryDark"
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="2 Jam"
+                    android:layout_toRightOf="@+id/one"
+                    android:layout_below="@+id/pengingat" />
+                <RadioButton
+                    android:textColor="@color/primaryDark"
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="3 Jam"
+                    android:layout_toRightOf="@+id/two"
+                    android:layout_below="@+id/pengingat" />
+                <Button
+                    android:id="@+id/btnIngat"
+                    android:background="@color/primaryDark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="30.0dip"
+                    android:text="Ingatkan"
+                    android:layout_below="@+id/two"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</FrameLayout>

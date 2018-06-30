@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@+id/contentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/scrollView" android:padding="@dimen/activity_margin" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/card_margin_horizontal"
+                android:paddingTop="@dimen/card_margin_top"
+                android:paddingRight="@dimen/card_margin_horizontal"
+                android:paddingBottom="@dimen/card_margin_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/png_icons8neck50152"
+                    android:layout_width="100.0sp"
+                    android:layout_height="100.0sp"
+                    android:layout_marginTop="30.0dip"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:id="@+id/berat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="160.0dip"
+                    android:hint="Masukan Berat Anda"
+                    android:numeric="decimal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/tinggi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="50.0dip"
+                    android:hint="Masukkan Tinggi Anda"
+                    android:numeric="integer"
+                    android:layout_below="@+id/berat" />
+
+                <TextView
+                    android:textSize="40.0sp"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/hasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16.0dip"
+                    android:text=""
+                    android:layout_below="@+id/hitungideal"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/smile"
+                    android:background="@drawable/icons8_happy"
+                    android:visibility="invisible"
+                    android:layout_width="50.0sp"
+                    android:layout_height="50.0sp"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_below="@+id/hasil"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/sad"
+                    android:background="@drawable/icons8_sad"
+                    android:visibility="invisible"
+                    android:layout_width="50.0sp"
+                    android:layout_height="50.0sp"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_below="@+id/hasil"
+                    android:layout_centerHorizontal="true" />
+
+                <RadioButton
+                    android:textColor="@color/primaryDark"
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Pria"
+                    android:layout_below="@+id/tinggi" />
+
+                <RadioButton
+                    android:textColor="@color/primaryDark"
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Wanita"
+                    android:layout_toRightOf="@+id/male"
+                    android:layout_below="@+id/tinggi" />
+
+                <Button
+                    android:id="@+id/hitungideal"
+                    android:background="@color/primaryDark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Hitung"
+                    android:layout_below="@+id/male" />
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</FrameLayout>

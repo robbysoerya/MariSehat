@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/progressContainer"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:scrollbarStyle="outsideOverlay"
+            android:id="@+id/scrollView"
+            android:padding="@dimen/activity_margin"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/card_margin_horizontal"
+                android:paddingTop="@dimen/card_margin_top"
+                android:paddingRight="@dimen/card_margin_horizontal"
+                android:paddingBottom="@dimen/card_margin_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/informasi"
+                    android:background="@drawable/png_icons8about50328"
+                    android:layout_width="75.0sp"
+                    android:layout_height="75.0sp"
+                    android:layout_marginTop="30.0dip"
+                    android:layout_centerHorizontal="true" />
+                <ImageView
+                    android:id="@+id/Kalori"
+                    android:background="@drawable/png_icons8calories50533"
+                    android:layout_width="50.0sp"
+                    android:layout_height="50.0sp"
+                    android:layout_marginTop="150.0dip" />
+
+                <TextView
+                    android:textColor="#ffffffff"
+                    android:id="@+id/aboutKalori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="150.0dip"
+                    android:text="Setiap manusia mempunyai kebutuhan kalori yang berbeda-beda. Perbedaan tersebut ditentukan berdasarkan berat badan,tinggi badan, jenis kelamin dan umur."
+                    android:layout_toRightOf="@+id/Kalori" />
+                <ImageView android:id="@+id/Ideal"
+                    android:background="@drawable/png_icons8neck50152"
+                    android:layout_width="50.0sp"
+                    android:layout_height="50.0sp"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_below="@+id/aboutKalori" />
+                <TextView
+                    android:textColor="#ffffffff"
+                    android:id="@+id/aboutIdeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Mendapatkan tubuh yang ideal merupakan idaman setiap manusia. Namun banyak dari mereka yang tidak mengetahui apakah tubuh mereka sudah ideal atau belum, tubuh ideal ialah tubuh yang berat dan tinggi sesuai."
+                    android:layout_toRightOf="@+id/Ideal"
+                    android:layout_below="@+id/aboutKalori" />
+
+                <ImageView
+                    android:id="@+id/Minum"
+                    android:background="@drawable/png_icons8drinking50826"
+                    android:layout_width="50.0sp"
+                    android:layout_height="50.0sp"
+                    android:layout_marginTop="20.0dip"
+                    android:layout_below="@+id/aboutIdeal" />
+                <TextView
+                    android:textColor="#ffffffff"
+                    android:id="@+id/aboutMinum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Fakta ilmiah mengatakan, bahwa tubuh orang dewasa terdiri dari 60% air. Namun itu juga dipengaruhi oleh berat badan anda, semakin berat badan anda, tentu semakin banyak kebutuhan air bagi tubuh."
+                    android:layout_toRightOf="@+id/Minum"
+                    android:layout_below="@+id/aboutIdeal" />
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</FrameLayout>
